@@ -1,0 +1,28 @@
+//
+//
+//
+// $PAGE
+//
+//
+// @author Benjamin Charity <ben@benjamincharity.com>
+//
+// @doc
+//  Styles for the page. Independtant from the plugin styles.
+// @end
+
+
+body {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.box {
+  background-color: rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  -moz-box-shadow:    0 0 4px rgba(0,0,0,0.4);
+  -ms-box-shadow:     0 0 4px rgba(0,0,0,0.4);
+  -o-box-shadow:      0 0 4px rgba(0,0,0,0.4);
+  box-shadow:         0 0 4px rgba(0,0,0,0.4);
+  height: 14em;
+  margin: 140px auto;
+  width: 40%;
+}

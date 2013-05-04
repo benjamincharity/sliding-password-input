@@ -1,0 +1,29 @@
+# Sliding Password Input
+
+- - -
+
+## Dependancies
+
+This plugin is dependant on [Zepto.js](http://zeptojs.com/) or [jQuery](http://jquery.com/).
+
+## Implementation
+
+Simply include
+
+#### Setup
+
+Include `sliding-password-input.scss` within your styles and include `sliding-password-input.js` in your javascript or directly onto the page.
+
+#### Initialize
+
+Call the plugin on any jQuery or Zepto 
+
+
+## Browser Support
+
+
+## Contributing
+
+- fork
+- follow guide and exisiting
+- latest two browsers
