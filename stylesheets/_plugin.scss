@@ -1,0 +1,70 @@
+//
+//
+//
+// $PLUGIN
+//
+//
+// @author Benjamin Charity <ben@benjamincharity.com>
+//
+// @doc
+//  Styles needed for the plugin's functionality.
+// @end
+
+
+//
+// Configuration settings.
+//
+
+// colors
+$input-background         : white;
+$input-border             : transparent;
+$input-border-hover       : #ccc;
+$input-border-focus       : darken($input-border-hover, 40%);
+$input-font-placeholder   : #dadada;
+$input-font-color         : darken($input-font-placeholder, 14%);
+
+$input-font-size          : 16px;
+$input-font-family        : #{"Helvetica Neue", Helvetica, sans-serif};
+
+$instruction-font-size    : 11px;
+$instruction-font-color   : #999;
+
+// <input>
+.spi__input {
+  background-color: $input-background;
+  border: 1px solid $input-border;
+  font-family: $input-font-family;
+  font-size: $input-font-size;
+  height: 30px;
+  -webkit-transition: all 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition:    all 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition:     all 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition:      all 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition:         all 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  width: 100%;
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: none;
+  }
+}
+
+//
+.spi__instructions {
+  color: $instruction-font-color;
+  display: block;
+  margin-top: 2px;
+  margin-top: .125rem;
+  font-size: $instruction-font-size;
+  text-align: right;
+
+  &::before {
+    content: "⏎";
+    margin-right: 2px;
+    margin-right: .125rem;
+  }
+}

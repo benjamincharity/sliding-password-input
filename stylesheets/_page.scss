@@ -11,12 +11,12 @@
 // @end
 
 
-body {
-  background-color: rgba(0,0,0,0.2);
+html {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .box {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(255,255,255,0.9);
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
   -moz-box-shadow:    0 0 4px rgba(0,0,0,0.4);
   -ms-box-shadow:     0 0 4px rgba(0,0,0,0.4);
@@ -24,5 +24,15 @@ body {
   box-shadow:         0 0 4px rgba(0,0,0,0.4);
   height: 14em;
   margin: 140px auto;
+  padding: 80px 100px;
+  text-align: center;
   width: 40%;
+}
+
+//
+// Although this is a style for a plugin specific element, it is included
+// here because it is only needed to cancel out a layout style above.
+//
+.spi__input {
+  text-align: left;
 }

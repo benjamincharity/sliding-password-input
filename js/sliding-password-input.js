@@ -36,5 +36,5 @@ SlidingPasswordInput = {
 
 
 $(function () {
-  SlidingPasswordInput.init();
+  //SlidingPasswordInput.init();
 });
