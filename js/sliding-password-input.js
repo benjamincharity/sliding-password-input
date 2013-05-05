@@ -2,25 +2,16 @@ var s,
 SlidingPasswordInput = {
 
   settings : {
-    firstInput: $('.main'),
-    secondInput: $('.main'),
-    nestedExample : {
-      first: true,
-      second: true,
-      third: true,
-      fourth: true,
-      fifth : ['one', 'two', 'three', 'four', 'five', 'six']
-    },
-
-    foo: 'bar'
-
+    firstInput: $('.js-input-new'),
+    secondInput: $('.js-input-confirm')
   },
 
   init: function () {
     s = this.settings;
 
-    this.nextMethod();
-    this.anotherMethod();
+    this.validateFormat();
+    this.testStrength();
+    this.comparePasswords();
   },
 
   validateFormat: function () {
@@ -36,5 +27,5 @@ SlidingPasswordInput = {
 
 
 $(function () {
-  //SlidingPasswordInput.init();
+  SlidingPasswordInput.init();
 });
